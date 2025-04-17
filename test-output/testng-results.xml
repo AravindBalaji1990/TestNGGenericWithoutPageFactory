@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-11-22T06:06:11 AST" name="Default suite" finished-at="2024-11-22T06:06:21 AST" duration-ms="9181">
+    <groups>
+    </groups>
+    <test started-at="2024-11-22T06:06:11 AST" name="Default test" finished-at="2024-11-22T06:06:21 AST" duration-ms="9181">
+      <class name="moduleTest.TestClassRun">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:moduleTest.TestClassRun@7857fe2]" started-at="2024-11-22T06:06:11 AST" name="setUp" finished-at="2024-11-22T06:06:19 AST" duration-ms="7276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testcase()[pri:0, instance:moduleTest.TestClassRun@7857fe2]" started-at="2024-11-22T06:06:19 AST" name="testcase" finished-at="2024-11-22T06:06:20 AST" duration-ms="1610" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testcase -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:moduleTest.TestClassRun@7857fe2]" started-at="2024-11-22T06:06:20 AST" name="tearDown" finished-at="2024-11-22T06:06:21 AST" duration-ms="258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- moduleTest.TestClassRun -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
