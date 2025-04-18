@@ -24,8 +24,6 @@ public class FirstPage {
     }
 
 
-    //    @AndroidFindBy(xpath = "//android.widget.TextView[@content-desc=\"Graphics\"]")
-//    public WebElement btn_graphicsdata;
     public static final By btn_graphics = AppiumBy.xpath("//android.widget.TextView[@content-desc=\"Graphics\"]");
 
 
