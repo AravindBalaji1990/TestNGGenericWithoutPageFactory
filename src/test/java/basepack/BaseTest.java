@@ -6,6 +6,7 @@ import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
 import io.appium.java_client.remote.AutomationName;
 import org.openqa.selenium.remote.DesiredCapabilities;
+
 import java.net.URL;
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
@@ -13,7 +14,7 @@ import java.util.concurrent.TimeUnit;
 public class BaseTest {
     protected static AndroidDriver driver;
 
-    public static AndroidDriver  setupDriver(){
+    public static AndroidDriver setupDriver() {
         ReadProperties readpropoertiesobj = new ReadProperties();
         try {
             UiAutomator2Options options = new UiAutomator2Options();
@@ -27,7 +28,8 @@ public class BaseTest {
             options.setAppWaitDuration(Duration.ofSeconds(60));
 
             // calling the andorid driver to run the app
-          return   driver = new AndroidDriver(new URL("http://127.0.0.1:4723/"), options);
+            driver = new AndroidDriver(new URL("http://127.0.0.1:4723/"), options);
+            return driver;
         } catch (Exception e) {
             System.out.println("Error during driver setup: " + e.getMessage());
             e.printStackTrace();

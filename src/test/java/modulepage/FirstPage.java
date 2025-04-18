@@ -1,8 +1,11 @@
 package modulepage;
 
 
+import basepack.BaseTest;
+import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.pagefactory.AndroidFindBy;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
@@ -21,13 +24,13 @@ public class FirstPage {
     }
 
 
-    @AndroidFindBy(xpath = "//android.widget.TextView[@content-desc=\"Graphics\"]")
-    public static WebElement btn_graphicsdata;
-//    public static final By btn_graphics = AppiumBy.xpath("//android.widget.TextView[@content-desc=\"Graphics\"]");
+    //    @AndroidFindBy(xpath = "//android.widget.TextView[@content-desc=\"Graphics\"]")
+//    public WebElement btn_graphicsdata;
+    public static final By btn_graphics = AppiumBy.xpath("//android.widget.TextView[@content-desc=\"Graphics\"]");
 
 
     public void verifyGraphics() {
-        boolean data = btn_graphicsdata.isDisplayed();
+        boolean data = driver.findElement(btn_graphics).isDisplayed();
         Assert.assertTrue(data, "the data did not satisfied");
 
     }

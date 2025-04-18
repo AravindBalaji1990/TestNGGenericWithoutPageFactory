@@ -18,6 +18,8 @@ public class TestClassRun {
 
     	// the dirver initlaised from the baseTest and utilised in the current page
         driver =  BaseTest.setupDriver();
+        loginpage = new FirstPage(driver);
+
     }
 
     @AfterMethod
@@ -29,7 +31,6 @@ public class TestClassRun {
 
     @Test
     public void testcase() {
-        loginpage = new FirstPage(driver);
         loginpage.verifyGraphics();
     }
 
