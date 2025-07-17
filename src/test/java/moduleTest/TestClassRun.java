@@ -1,6 +1,7 @@
 package moduleTest;
 
 
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import modulepage.FirstPage;
 
@@ -10,16 +11,14 @@ import org.testng.annotations.Test;
 import basepack.*;
 
 public class TestClassRun {
-    public AndroidDriver driver;
+    public AppiumDriver driver;
     public FirstPage loginpage;
 
     @BeforeMethod
     public void setUp() {
-
-    	// the dirver initlaised from the baseTest and utilised in the current page
-        driver =  BaseTest.setupDriver();
+        // the dirver initlaised from the baseTest and utilised in the current page
+        driver = BaseTest.setupDriver();
         loginpage = new FirstPage(driver);
-
     }
 
     @AfterMethod
@@ -30,9 +29,12 @@ public class TestClassRun {
     }
 
     @Test
-    public void testcase() {
+    public void testcase1() {
         loginpage.verifyGraphics();
     }
 
-
+    @Test
+    public void testcase2() {
+        loginpage.verifyNfc();
+    }
 }
