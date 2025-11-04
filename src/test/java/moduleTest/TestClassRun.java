@@ -14,6 +14,7 @@ public class TestClassRun {
     public AppiumDriver driver;
     public FirstPage loginpage;
 
+    // as a pre-requisite i do the driver assignment fromthe BaseTest class file
     @BeforeMethod
     public void setUp() {
         // the dirver initlaised from the baseTest and utilised in the current page
